@@ -444,7 +444,7 @@ section .title::after{
 
 /* --------------------------------------------------teams section styling--------------------------------------------------- */
 .teams .title::after{
-    content: "who with me";
+    content: "what i did";
 }
 
 .teams .carousel .card{
@@ -473,9 +473,13 @@ section .title::after{
 }
 
 .teams .carousel .card .text{
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 500;
     margin: 10px 0 7px 0;
+}
+
+.teams .carousel .card p{
+    font-size: 15px;
 }
 
 .teams .carousel .card img{
