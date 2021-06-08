@@ -643,11 +643,11 @@ section .title::after{
 
 #status.success{
     background-color: greenyellow;
-    color: #fff;
+    color: #333;
     animation: status 4s ease forwards;
 }
 
-#status.success{
+#status.error{
     background-color: red;
     color: #fff;
     animation: status 4s ease forwards;
