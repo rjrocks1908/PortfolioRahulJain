@@ -406,25 +406,53 @@ section .title::after{
     content: "what i did";
 }
 
-.teams .carousel .card{
+.teams .carousel .card {
     background: #222;
     border-radius: 6px;
     padding: 25px 35px;
     text-align: center;
     transition: all 0.3s ease;
+    height: 400px; /* Set a fixed height for all cards */
+    display: flex;
+    flex-direction: column;
+}
+
+.teams .carousel .card .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%; /* Make the box take full height of the card */
+    transition: all 0.3s ease;
+}
+
+.teams .carousel .card img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid crimson;
+    transition: all 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.teams .carousel .card .text {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.teams .carousel .card p {
+    font-size: 15px;
+    flex-grow: 1; /* Allow the paragraph to grow and fill available space */
+    overflow: hidden; /* Hide overflowing content */
+    text-overflow: ellipsis; /* Add ellipsis for overflowing text */
+    display: -webkit-box;
 }
 
 .teams .carousel .card:hover{
     background: crimson;
 
-}
-
-.teams .carousel .card .box{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
 }
 
 .teams .carousel .card:hover .box{
@@ -439,15 +467,6 @@ section .title::after{
 
 .teams .carousel .card p{
     font-size: 15px;
-}
-
-.teams .carousel .card img{
-    height: 150px;
-    width: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 5px solid crimson;
-    transition: all 0.3s ease;
 }
 
 .teams .carousel .card:hover img{
@@ -791,3 +810,4 @@ footer span a:hover{
     }
 
 }
+
